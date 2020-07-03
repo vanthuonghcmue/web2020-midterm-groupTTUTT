@@ -15,6 +15,6 @@ Thành viên nhóm :
 5. Trần Nguyễn Anh Thi
    MSSV: 44.01.104.211
    SĐT: 0923243319
-6. Keophanthavong othai
+6. Keophanthavong Othai
    MSSV: 44.01.104.248
    SĐT: 0822890885
