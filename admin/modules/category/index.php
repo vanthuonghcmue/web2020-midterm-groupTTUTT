@@ -7,14 +7,14 @@
          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
             <div class="product-status-wrap">
-               <h4>Danh Mục</h4>
+               <h4>Loai San Pham</h4>
                <div class="add-product">
-                  <a href="add.php">Thêm Danh Mục</a>
+                  <a href="add.php">Thêm Loai</a>
                </div>
                <table>
                   <tr>
                      <th>Stt</th>
-                     <th>Tên Danh Mục</th>
+                     <th>Tên Loai</th>
                      <th>Trạng Thái</th>
                      <th>Ngày Tạo</th>
                      <th>Ngày Sửa</th>
@@ -34,7 +34,7 @@
                              <td>
                                  <button class={"pd-setting"} ></button>
                              </td>
-                             <td>{$row['created_at']}/td>
+                             <td>{$row['created_at']}</td>
                              <td>{$row['updated']}</td>
                              <td>
                                  <a href="edit.php?id= {$row['id']} "> <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>

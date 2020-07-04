@@ -10,11 +10,11 @@
       <div class="row">
          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="product-status-wrap">
-               <h4>Thêm Danh Mục Sản Phẩm</h4>
+               <h4>Thêm Loai Sản Phẩm</h4>
                <form action="" method="post" enctype="multipart/form-data">
                   <div class="row">
                      <div class="col-lg-8">
-                        <input type="text" class="form-control" placeholder="Tên danh mục mới" name="tendanhmuc">
+                        <input type="text" class="form-control" placeholder="Tên Loai mới" name="tendanhmuc">
                      </div>
                      <div class="col-lg-4">
                         <input class="btn btn-primary" type="submit" value="Submit">
@@ -29,7 +29,7 @@
 <?php
    $tendanhmuc = @$_REQUEST['tendanhmuc'];
    if (isset($tendanhmuc)) {
-       $sql = "INSERT INTO `category` (`id`, `name`, `slug`, `images`, `banner`, `home`, `status`, `created_at`, `updated`) VALUES (NULL, '{$tendanhmuc}', NULL, NULL, NULL, '0', '0', current_timestamp(), current_timestamp())";
+       $sql = "INSERT INTO `category` (`id`, `name`,  `home`, `status`, `created_at`, `updated`) VALUES (NULL, '{$tendanhmuc}','0', '0', current_timestamp(), current_timestamp())";
        echo $sql;
        $result = DataProvider::ExecuteQuery($sql);
    }
