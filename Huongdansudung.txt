@@ -1,0 +1,6 @@
+Hướng dẫn sử dụng đồ án
+- Đưa file DoAnWeb2020 vào htdoc
+- Bật xampp 
+- Truy cập địa chỉ localhost:8080/myadmin vào Tạo cơ sở dữ liệu có tên giuaki 
+- Export cơ sở dữ liệu trong file DoAnWeb2020/Export/category
+- Truy cập vào địa chỉ localhost:8080/DoAnWeb2020/admin/moduldes để xóa hoặc thêm Loại sản phẩm 
