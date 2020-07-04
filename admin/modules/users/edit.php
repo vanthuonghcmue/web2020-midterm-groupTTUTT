@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <form action="" method="post" enctype="multipart/form-data">
                         <?php
                         try {
-                            $sql = "SELECT * FROM users";
+                            $sql = "SELECT * FROM khachhang";
                             if (isset($_GET['id'])) {
                                 $id = $_GET['id'];
                                 $sql .= " WHERE id = " . $id;
@@ -68,13 +68,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 <?php
 if (isset($_REQUEST['TenAD'])) {
-    $sql = "UPDATE `users` SET `name` = '{$_REQUEST['TenAD']}', `email` = '{$_REQUEST['email']}', `address` = '{$_REQUEST['address']}', `phone` = '{$_REQUEST['phone']}', `Account` = '{$_REQUEST['account']}',
-             `password` = '{$_REQUEST['password']}', `created_at` = NULL, `updata_up` = NULL WHERE `users`.`id` = $id";
+    $sql = "UPDATE `khachhang` SET `name` = '{$_REQUEST['TenAD']}', `email` = '{$_REQUEST['email']}', `address` = '{$_REQUEST['address']}', `phone` = '{$_REQUEST['phone']}', `Account` = '{$_REQUEST['account']}',
+             `password` = '{$_REQUEST['password']}', `created_at` = NULL, `updata_up` = NULL WHERE `khachhang`.`id` = $id";
     echo $sql;
     DataProvider::ExecuteQuery($sql);
     if (@$_FILES['Hinh']['error'] == 0) {
         move_uploaded_file(@$_FILES['Hinh']["tmp_name"], "img_users/" . @$_FILES['Hinh']["name"]);
-        $sql = "UPDATE `users` SET  `avatar` = '{$_FILES['Hinh']["name"]}' WHERE `users`.`id` = $id";
+        $sql = "UPDATE `khachhang` SET  `avatar` = '{$_FILES['Hinh']["name"]}' WHERE `khachhang`.`id` = $id";
         echo $sql;
         DataProvider::ExecuteQuery($sql);
     }

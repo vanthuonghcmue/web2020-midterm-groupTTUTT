@@ -28,7 +28,7 @@
                   </tr>
                   <?php
                   try {
-                     $sql = "SELECT id, name,address,email,Account, password,phone, avatar, created_at, updata_up  FROM `users`   ";
+                     $sql = "SELECT id, name,address,email,Account, password,phone, avatar, created_at, updata_up  FROM `khachhang`   ";
                      $result = DataProvider::ExecuteQuery($sql);
             
                      $stt = 0;

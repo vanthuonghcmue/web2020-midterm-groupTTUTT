@@ -81,12 +81,20 @@
 								   <span class="mini-click-non">Trang Chủ</span>
 							</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="/DoAnWeb2020/admin/modules/admins"><i class="fa fa-bullseye sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản Lý Admin</span></a></li>
-                                <li><a title="Dashboard v.2" href="/DoAnWeb2020/admin/modules/category"><i class="fa fa-circle-o sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản Lý Danh Mục</span></a></li>
-                                <li><a title="Dashboard v.4" href="/DoAnWeb2020/admin/modules/type"><i class="fa fa-circle-o sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản lý Loại Sản Phẩm</span></a></li>
-                                <li><a title="Dashboard v.3" href="/DoAnWeb2020/admin/modules/product"><i class="fa fa-cube sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản Lý Sản Phẩm</span></a></li>
-                                <li><a title="Product List" href="/DoAnWeb2020/admin/modules/users"><i class="fa fa-female sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản Lý Người Dùng</span></a></li>
+                                <li><a title="Dashboard v.1" href="#"><i class="fa fa-bullseye sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Chi Tiết Hóa Đơn</span></a></li>
+                                <li><a title="Dashboard v.2" href="/DoAnWeb2020/admin/modules/category"><i class="fa fa-circle-o sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản loại hàng hóa</span></a></li>
+                                <li><a title="Dashboard v.3" href="/DoAnWeb2020/admin/modules/product"><i class="fa fa-cube sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản Lý Hàng Hóa</span></a></li>
+                                <li><a title="Product List" href="/DoAnWeb2020/admin/modules/users"><i class="fa fa-female sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Quản Lý Khách Hàng</span></a></li>
                                 
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="fa big-icon fa-pie-chart icon-wrap"></i> <span class="mini-click-non">Khách Hàng</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="File Manager" href="#"><i class="fa fa-folder sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Sản Phẩm Đã Mua</span></a></li>
+                                <li><a title="Blog" href="#"><i class="fa fa-square sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Kiểm Tra Hóa Đơn</span></a></li>
+                                <li><a title="Blog Details" href="#"><i class="fa fa-tags sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Tra Cứu Thông Tin</span></a></li>
+                
                             </ul>
                         </li>
                         
@@ -255,11 +263,20 @@
                                     <ul class="mobile-menu-nav">
                                         <li><a data-toggle="collapse" data-target="#Charts" href="#">Trang Chủ <span class="admin-project-icon adminpro-icon adminpro-down-arrow"></span></a>
                                             <ul class="collapse dropdown-header-top">
-                                                <li><a href="/DoAnWeb2020/admin/modules/admins">Quản Lý Admin</a></li>
-                                                <li><a href="/DoAnWeb2020/admin/modules/category">Quản Lý Danh Mục</a></li>
-                                                <li><a href="/DoAnWeb2020/admin/modules/type">Quản Lý Loại Sản Phẩm</a></li>
+                                                <li><a href="#">Chi Tiết Hóa Đơn</a></li>
+                                                <li><a href="/DoAnWeb2020/admin/modules/category">Quản Lý Hóa Đơn</a></li>
+                                                
                                                 <li><a href="/DoAnWeb2020/admin/modules/product">Quản Lý Sản Phẩm</a></li>
-                                                <li><a href="/DoAnWeb2020/admin/modules/users">Quản Lý Người Dùng</a></li>
+                                                <li><a href="/DoAnWeb2020/admin/modules/users">Quản Lý Khách Hàng</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Khách Hàng <span class="admin-project-icon adminpro-icon adminpro-down-arrow"></span></a>
+                                            <ul class="collapse dropdown-header-top">
+                                                <li><a href="#">Sản Phẩm Đã Mua</a></li>
+                                                <li><a href="#">Kiểm Tra Hóa Đơn</a></li>
+                                                <li><a href="#">Tra Cứu Thông Tin</a></li>
+                                               
                                                 
                                             </ul>
                                         </li>

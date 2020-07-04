@@ -10,11 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-status-wrap">
-                    <h4>Thêm User</h4>
+                    <h4>Thêm Khách hàng</h4>
                 <!-- Begin form add product -->
                     <form action="" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label>Tên User</label>
+                            <label>Tên khách hàng</label>
                             <input type="text" class="form-control" placeholder="Enter name" name="TenAD">
                         </div>
                         <div class="form-group">
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if(@$_FILES['Hinh']['error'] == 0){
     if(move_uploaded_file(@$_FILES['Hinh']["tmp_name"], "img_users/".@$_FILES['Hinh']["name"]))
         {
-            $sql = "INSERT INTO `users` (`id`, `name`, `email`,`address`,  `phone`,`Account`, `password`, `avatar`, `status`,`token`,`created_at`, `updata_up`) 
+            $sql = "INSERT INTO `khachhang` (`id`, `name`, `email`,`address`,  `phone`,`Account`, `password`, `avatar`, `status`,`token`,`created_at`, `updata_up`) 
             VALUES (NULL, '{$_REQUEST['TenAD']}', '{$_REQUEST['email']}','{$_REQUEST['address']}', '{$_REQUEST['phone']}', '{$_REQUEST['account']}','{$_REQUEST['password']}','{$_FILES['Hinh']['name']}',  '1','1', current_timestamp() , current_timestamp())";
             echo $sql;
             DataProvider::ExecuteQuery($sql);
