@@ -74,7 +74,7 @@
                 <tr>
                     <td colspan="5">
                         <br><br>
-                        Tổng tiền của đơn hàng là :
+                        Tổng số tiền của đơn hàng là :
                         <?php
                             $tong_lon_duoc_dinh_dang=number_format($tong_lon,0,",",".");
                             echo "<b>".$tong_lon_duoc_dinh_dang."</b>";
