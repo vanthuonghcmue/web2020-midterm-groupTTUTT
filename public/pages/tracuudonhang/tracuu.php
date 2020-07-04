@@ -3,14 +3,12 @@
 ?>
 <?php
     $id=$_GET['id'];
-    $tv="select * from hoa_don where id='$id' ";
+    $tv="select * from HoaDon where id='$id' ";
     $tv_1=mysql_query($tv);
     $tv_2=mysql_fetch_array($tv_1);
-    $ten_nguoi_mua=$tv_2['ten_nguoi_mua'];
-    $email=$tv_2['email'];
-    $dien_thoai=$tv_2['so_dien_thoai'];
-    $dia_chi=$tv_2['dia_chi'];
-    $noi_dung=$tv_2['noi_dung'];
+    $HoTen=$tv_2['HoTen'];
+    $Email=$tv_2['Email'];
+    $DienThoai=$tv_2['DienThoai'];
     $hang_duoc_mua=$tv_2['hang_duoc_mua'];
     $link_dong="?thamso=hoa_don&&trang=".$_GET['trang'];
     $link_xoa="?xoa_hoa_don_o_trang_chi_tiet=co&id=".$id."&trang=".$_GET['trang'];
@@ -96,35 +94,24 @@
         </td>
     </tr>
     <tr height="30px" >
-        <td >Tên người mua : </td>
+        <td > Họ Tên : </td>
         <td >
-            <?php echo $ten_nguoi_mua; ?>
+            <?php echo $HoTen; ?>
         </td>
     </tr>
     <tr height="30px" >
-        <td >Địa chỉ Email : </td>
+        <td >Email : </td>
         <td >
-            <?php echo $email; ?>
+            <?php echo $Email; ?>
         </td>
     </tr>       
     <tr height="30px" >
         <td >Điện thoại : </td>
         <td >
-            <?php echo $dien_thoai; ?>
+            <?php echo $DienThoai; ?>
         </td>
     </tr>
-    <tr height="30px" >
-        <td valign="top" >Địa chỉ : </td>
-        <td >
-            <?php echo $dia_chi; ?>
-        </td>
-    </tr>
-    <tr height="30px" >
-        <td valign="top" >Nội dung : </td>
-        <td >
-            <?php echo $noi_dung; ?>
-        </td>
-    </tr>
+  
    
     <tr height="30px" >
         <td>&nbsp;</td>
